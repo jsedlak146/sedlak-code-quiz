@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Coding Quiz</title>
+</head>
+<body>
+   <nav>
+        <p id="high-score">Highscores</p>
+        <p id="time">time: 0</p>
+   </nav>
+   <header class="start screen">
+       <h2>Coding quiz</h2>
+       <p>Answer these 5 questions, wrong answers take off 15 seconds!</p>
+       <button type="button" class="start">Start!</button>
+    </header>
+    <div id="question-container">
+        <h1 class="question"></h1>
+        <ol>
+            <li><button class="answerOne" onclick="nextQuestion()"></button></li>
+            <li><button class="answerTwo" onclick="nextQuestion()"></button></li>
+            <li><button class="answerThree" onclick="nextQuestion()"></button></li>
+            <li><button class="answerFour" onclick="nextQuestion()"></button></li>
+        </ol>
+    </div>
+   <script src="./assets/game.script.js"></script>
+</body>
+</html>
