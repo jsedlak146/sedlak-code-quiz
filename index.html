@@ -7,24 +7,22 @@
   <title>Coding Quiz</title>
 </head>
 <body>
-   <nav>
-        <p id="high-score">Highscores</p>
-        <p id="time">time: 0</p>
-   </nav>
-   <header class="start screen">
-       <h2>Coding quiz</h2>
-       <p>Answer these 5 questions, wrong answers take off 15 seconds!</p>
-       <button type="button" class="start">Start!</button>
+    <nav>
+        <p id="high-score">High Scores</p>
+        <p id="time">time</p>
+    </nav>
+    <header class ="start screen">
+        <h1>Javascript Quiz</h1>
+        <p>Answer these 5 questions, wrong answers will take off 15 seconds!</p>
+        <button type="button" class="start"></button>/button>
     </header>
-    <div id="question-container">
-        <h1 class="question"></h1>
-        <ol>
-            <li><button class="answerOne" onclick="nextQuestion()"></button></li>
-            <li><button class="answerTwo" onclick="nextQuestion()"></button></li>
-            <li><button class="answerThree" onclick="nextQuestion()"></button></li>
-            <li><button class="answerFour" onclick="nextQuestion()"></button></li>
-        </ol>
-    </div>
-   <script src="./assets/game.script.js"></script>
+<div  id="quiz"></div>
+
+<button id="submit quiz">Submit Quiz</button>
+
+<div id="results"></div>
+
+<script src="./assets/game.script.js"></script>
+
 </body>
 </html>
