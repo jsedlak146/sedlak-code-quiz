@@ -1,10 +1,10 @@
 //These are the variables I will need for my quiz to run
-
+var timeEl= document.querySelector("#time");
 var quizContainer = document.getElementById('quiz');
-var submitQuiz = document.getElementById('submit');
-var resultsContainer = document.getElementById('result');
+var submitQuiz = document.getElementById('submit quiz');
+var resultsContainer = document.getElementById('results');
 var startQuiz = document.querySelector(".start");
-
+var secondsLeft = 75;
 //I made an array to hold my 4 questions and their multiple choice answers.
 
 const theQuestions = [
@@ -45,6 +45,16 @@ const theQuestions = [
         b: "Joe Sedlak",
         c: "Jersey Shore",
         d: "Just sayin"
+    },
+    correctAnswer: "a"
+},
+{
+    question: "JavaScript is used for??",
+    answers: {
+        a: "adding functionality to a website",
+        b: "Styling",
+        c: "i dont know",
+        d: "communicating with the world"
     },
     correctAnswer: "a"
 }
@@ -112,4 +122,11 @@ function yourScore() {
 theQuiz();
 
 submitQuiz.addEventListener('click', yourScore);
+
+function setTime() {
+    var timerInterval = setInterval(function(){
+        secondsLeft--;
+        timeEl.textContent = "time" + secondsLeft;
+    }, 1000);
+}
 
